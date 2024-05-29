@@ -26,7 +26,7 @@ O script instalará automaticamente os seguintes softwares:
 
 ## Personalização
 
-Se desejar adicionar, remover ou alterar os softwares instalados, você pode editar o arquivo `install_software.py` e atualizar o dicionário `software_map`.
+Se desejar adicionar, remover ou alterar os softwares instalados, você pode editar o arquivo `app.py` e atualizar o dicionário `software_map`.
 
 ## Notas
 

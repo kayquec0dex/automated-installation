@@ -2,7 +2,6 @@ import os
 import subprocess
 
 def install_software():
-    # Mapeia nomes de softwares para pacotes do Chocolatey
     software_map = {
         "Office 365": "office365proplus",
         "AnyDesk": "anydesk",
@@ -12,7 +11,6 @@ def install_software():
         "Teams": "teams"
     }
 
-    # Verifica se o Chocolatey está instalado
     try:
         subprocess.check_call(["choco", "-v"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         choco_installed = True
@@ -28,7 +26,6 @@ def install_software():
             print("Erro na instalação do Chocolatey. Saindo do script.")
             return
 
-    # Instala os softwares
     for software, package in software_map.items():
         print(f"Instalando {software} ({package})...")
         try:
